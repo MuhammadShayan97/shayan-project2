@@ -166,7 +166,6 @@ function Portrait() {
            * Next.js serves files in public from the website root,
            * so the corresponding URL is /images/shayan.jpg.
            * If your image has a different extension, update this path.
-           * This component never generates or substitutes your face.
            */
           <img
             src="/shayan.jpeg.jpeg"
@@ -3179,11 +3178,6 @@ export default function Page() {
 
                   <div className="project-footer">
                     <span>EARLY-STAGE IDEA</span>
-                    {/*
-                     * Replace this placeholder with the real repository URL
-                     * once the project is published. Until then, do not imply
-                     * a repository or working demo already exists.
-                     */}
                     <a
                       href="#contact"
                       aria-label={`Ask about the ${project.name} concept`}
@@ -3251,19 +3245,7 @@ export default function Page() {
               <span>03 CHANNELS</span>
             </div>
 
-            {/*
-             * Replace the placeholder href values below with your real
-             * email address and profile URLs before publishing.
-             * No contact form is shown because no delivery backend is configured.
-             */}
-            <a
-              className="contact-link"
-              href="mailto:your.email@example.com"
-              onClick={(event) => {
-                event.preventDefault();
-                window.location.href = "mailto:your.email@example.com";
-              }}
-            >
+            <a className="contact-link" href="mailto:shayan.zone97@gmail.com">
               <span className="contact-icon">
                 <svg
                   width="18"
@@ -3291,18 +3273,16 @@ export default function Page() {
               </span>
               <span className="contact-link-text">
                 <small>Email</small>
-                <strong className="contact-placeholder">
-                  your.email@example.com
-                </strong>
+                <strong>shayan.zone97@gmail.com</strong>
               </span>
               <ArrowUpRight size={16} />
             </a>
 
             <a
               className="contact-link"
-              href="https://github.com/"
+              href="https://github.com/MuhammadShayan97"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span className="contact-icon">
                 <svg
@@ -3323,18 +3303,16 @@ export default function Page() {
               </span>
               <span className="contact-link-text">
                 <small>GitHub</small>
-                <strong className="contact-placeholder">
-                  Add your GitHub profile
-                </strong>
+                <strong>github.com/MuhammadShayan97</strong>
               </span>
               <ArrowUpRight size={16} />
             </a>
 
             <a
               className="contact-link"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/muhammad-shayan-36939a377?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span className="contact-icon">
                 <svg
@@ -3361,16 +3339,13 @@ export default function Page() {
               </span>
               <span className="contact-link-text">
                 <small>LinkedIn</small>
-                <strong className="contact-placeholder">
-                  Add your LinkedIn profile
-                </strong>
+                <strong>Connect with Muhammad Shayan</strong>
               </span>
               <ArrowUpRight size={16} />
             </a>
 
             <p className="contact-panel-foot">
-              Before publishing, update the email address and profile links to
-              your actual contact details.
+              Reach out by email or connect with me through GitHub and LinkedIn.
             </p>
           </div>
         </div>
@@ -3395,13 +3370,25 @@ export default function Page() {
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
+              <a
+                href="https://github.com/MuhammadShayan97"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <ArrowUpRight size={12} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-shayan-36939a377?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <ArrowUpRight size={12} />
+              </a>
             </nav>
           </div>
 
           <div className="footer-bottom">
-            <span>
-              © {new Date().getFullYear()} MUHAMMAD SHAYAN
-            </span>
+            <span>© {new Date().getFullYear()} MUHAMMAD SHAYAN</span>
             <span>MADE WITH CURIOSITY · BASED IN PAKISTAN</span>
           </div>
         </div>
